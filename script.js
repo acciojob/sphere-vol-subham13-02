@@ -4,9 +4,10 @@ function volume_sphere() {
 
   // Calculate the volume of the sphere
   const volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+const roundedVolume = volume.toFixed(4);
 
   // Update the volume field with the calculated volume value
-  document.getElementById('volume').value = volume;
+  document.getElementById('volume').value =roundedVolume;
 }
 
 // Add an event listener to the form submit event
